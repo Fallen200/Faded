@@ -99,6 +99,8 @@ bot.on("message", function (message) {
                 .setColor(0xff1c1c)
             message.channel.sendEmbed(embed)
             break;
+        case "servers":
+            message.channel.send("I was on " + bot.guilds.size + "Discord Servers since I was last reset!")
         case "bork":
             message.channel.send("https://pre00.deviantart.net/9cb7/th/pre/i/2016/360/9/1/bork_bork__by_cartoon_bazooka-daszygl.png")
             break;
@@ -227,7 +229,7 @@ bot.on("message", function (message) {
             embed.setColor(0xFFD700);
             embed.setTitle("Commmands")
             embed.addField("New Commands", "Suggest - Make a suggestion for the bot.\nRoastMe - Have the bot roast you.")
-            embed.addField("Useful Commands", "Userinfo - Gives you information on the user that ran the command.\nDm - DM a user through the bot\nBotinfo - Gives information on the bot\nDiscord - list our discord.\nWebsite - List our website.\nHelp - gives all commands.\nSuggest - make a suggestion for the bot.\nDescription - A overall description of th bot\nUpdates - Recent updates that happend to the bot.\nBug - Report a bug you have found with the bot.");
+            embed.addField("Useful Commands", "Userinfo - Gives you information on the user that ran the command.\nDm - DM a user through the bot\nBotinfo - Gives information on the bot\nDiscord - list our discord.\nWebsite - List our website.\nServers - Shows how much Discord servers the bot was on since it was last rest.\nHelp - gives all commands.\nSuggest - make a suggestion for the bot.\nDescription - A overall description of th bot\nUpdates - Recent updates that happend to the bot.\nBug - Report a bug you have found with the bot.");
             embed.addField("Fun Commands", "Hi - Greets you.\nSpam - You know ;)\nBork - Borks at ya. ;)\nMeme - Sends some spicy memes.\nPing - Gives you a ping...\nLife - Life\nRoastMe - Have the bot roast you.")
             embed.setFooter("Made by VexNoid | Fallen#9211");
 
