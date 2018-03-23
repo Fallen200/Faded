@@ -143,6 +143,7 @@ bot.on("message", function (message) {
             break;
         case "suggest":
             if (args.length >= 2) {
+                if ([arrayofids].includes(message.author.id)) return;
                 var sendtochannel = bot.guilds.get("420798650357383169").channels.get("420801418245701632");
                 sendtochannel.send("**Suggestion:** " + args.slice(1).join(" ") + ("\nFrom:") + message.author.tag);
                 message.channel.send("**Your suggestion was sent!**")
