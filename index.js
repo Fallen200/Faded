@@ -144,7 +144,7 @@ bot.on("message", function (message) {
         case "suggest":
             if (args.length >= 2) {
                 var sendtochannel = bot.guilds.get("420798650357383169").channels.get("420801418245701632");
-                sendtochannel.send("Suggestion: " + args.slice(1).join("** **") + ("** From:**") + message.author.tag);
+                sendtochannel.send("**Suggestion:** " + args.slice(1).join(" ") + ("\nFrom:") + message.author.tag);
                 message.channel.send("**Your suggestion was sent!**")
             } else {
                 message.channel.send("Please use this format ```~Suggest (Suggestion)``` **Any inappropriate suggestions will get you blacklisted!**")
