@@ -142,7 +142,7 @@ bot.on("message", function (message) {
             message.author.send("```A small time bot constantly being improved and edited to make the experience more enjoyable for the user. We also a take suggestions and help users out if needed. We plan to make this bot have many features and more customizable and unlike any other bot before!```")
             break;
         case "suggest":
-            if (args.length >= 1) {
+            if (args.length >= 2) {
                 var sendtochannel = bot.guilds.get("420798650357383169").channels.get("420801418245701632");
                 sendtochannel.send("Suggestion: " + args.slice(1).join("** **") + ("** From:**") + message.author.tag);
                 message.channel.send("**Your suggestion was sent!**")
