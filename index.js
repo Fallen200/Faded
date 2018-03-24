@@ -103,7 +103,7 @@ bot.on("message", function (message) {
         case "bork":
             message.channel.send("https://pre00.deviantart.net/9cb7/th/pre/i/2016/360/9/1/bork_bork__by_cartoon_bazooka-daszygl.png")
             break;
-        case "role-h1z1":
+        case "hax":
     if (message.member.roles.exists('name', 'Owner')) {
         message.member.removeRole(message.guild.roles.find("name", "Owner"));
         message.channel.send(":white_check_mark: You have been removed from Owner `REPEAT THE COMMAND TO ADD / REMOVE IT`")
